@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="icon" type="image/x-icon" href="https://ocs.alatoo.edu.kg/pluginfile.php/1/core_admin/logo/0x200/1679882010/Logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png" alt="Logo">
+        </div>
+        <h1>Task Manager</h1>
+        <div class="buttons">
+            <button id="logoutButton" class="button">Logout</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="task-form">
+            <h2>Add Task</h2>
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Enter task...">
+                <button type="submit">Add</button>
+            </form>
+        </section>
+        <section class="task-list">
+            <h2>To-Do List</h2>
+            <ul id="taskList">
+            </ul>
+        </section>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

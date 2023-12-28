@@ -1,0 +1,146 @@
+body,
+ul,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.task-form {
+    margin-bottom: 20px;
+}
+
+.task-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#taskInput {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#taskInput:focus {
+    outline: none;
+}
+
+#taskForm button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.task-list h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+#taskList li:last-child {
+    border-bottom: none;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#logoutButton {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+#logoutButton:hover {
+    background-color: #c82333;
+}
+
+#logoutButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #taskInput {
+        width: calc(100% - 60px);
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 960px;
+    }
+
+    #taskInput {
+        width: calc(100% - 100px);
+    }
+}
