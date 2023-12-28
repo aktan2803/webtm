@@ -1,4 +1,4 @@
-#Task Manager
+# Task Manager
 
 A Task Manager is a software application designed to assist individuals or teams in organizing, tracking, and managing tasks or activities efficiently. It helps users maintain a structured approach to their work by enabling them to:
 
